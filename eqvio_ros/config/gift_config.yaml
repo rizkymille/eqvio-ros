@@ -1,0 +1,15 @@
+GIFT:
+  maxFeatures: 40
+  featureDist: 85.14085350941133
+  minHarrisQuality: 0.041154574134693075
+  featureSearchThreshold: 0.4678407422980303
+  maxError: 24.859286812166822
+  winSize: 21
+  maxLevel: 3
+  trackedFeatureDist: 20.0
+  equaliseImageHistogram: false
+  ransacParams:
+    inlierThreshold: 0.0023054130418769516
+    maxIterations: 53
+    minDataPoints: 5
+    minInliers: 47

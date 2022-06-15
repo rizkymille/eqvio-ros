@@ -1,0 +1,12 @@
+<launch>
+
+<param name="eqvio/eqvio_config" type="str" value="$(find eqvio_ros)/config/eqvio_config.yaml" />
+<param name="eqvio/gift_config" type="str" value="$(find eqvio_ros)/config/gift_config.yaml" />
+<param name="eqvio/camera_intrinsics" type="str" value="$(find eqvio_ros)/config/camera_intrinsics.yaml" />
+
+<remap from="/eqvio/imu" to="/camera/imu"/>
+<remap from="/eqvio/image" to="/camera/color/image_raw"/>
+
+<node pkg="eqvio_ros" name="eqvio" type="eqvio_ros_node" output="screen"/>
+
+</launch>
