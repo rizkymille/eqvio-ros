@@ -15,3 +15,9 @@ Please see https://pvangoor.github.io/eqvio_docs/ for the documentation.
 - FreeGLUT (for visualisations): `sudo apt install freeglut3-dev`
 - ROS (for reading ROS-Bags): http://wiki.ros.org/ROS/Installation
 - Doxygen (for documentation): `sudo apt install doxygen`
+
+### Issues
+Sometimes Eigen3 appears missing from CMake because of linker. Run these commands to repair:
+`cd /usr/include`
+`sudo ln -sf eigen3/Eigen Eigen`
+`sudo ln -sf eigen3/unsupported unsupported`
