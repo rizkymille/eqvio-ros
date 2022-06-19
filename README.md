@@ -17,7 +17,7 @@ Please see https://pvangoor.github.io/eqvio_docs/ for the documentation.
 - Doxygen (for documentation): `sudo apt install doxygen`
 
 ### Issues
-Sometimes Eigen3 appears missing from CMake because of linker. Run these commands to repair:
-`cd /usr/include`
-`sudo ln -sf eigen3/Eigen Eigen`
+Sometimes Eigen3 appears missing from CMake because of linker. Run these commands to repair:\
+`cd /usr/include`\
+`sudo ln -sf eigen3/Eigen Eigen`\
 `sudo ln -sf eigen3/unsupported unsupported`
