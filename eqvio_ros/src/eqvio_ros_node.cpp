@@ -115,8 +115,8 @@ void CallbackStruct::callbackImage(const sensor_msgs::ImageConstPtr& msg) {
     	cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::TYPE_8UC1);
     }
     
-    const VisionMeasurement& featurePrediction = filter.getFeaturePredictions(cameraPtr, msg->header.stamp.toSec());
-    featureTracker.processImage(cv_ptr->image, featurePrediction.ocvCoordinates());
+    //const VisionMeasurement& featurePrediction = filter.getFeaturePredictions(cameraPtr, msg->header.stamp.toSec());
+    //featureTracker.processImage(cv_ptr->image, featurePrediction.ocvCoordinates());
     visionData = convertGIFTFeatures(featureTracker.outputFeatures(), msg->header.stamp.toSec());
     visionData.cameraPtr = cameraPtr;
     filter.processVisionData(visionData);

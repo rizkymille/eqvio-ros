@@ -21,23 +21,25 @@ eqf:
     sceneDepth: 5.063359392968643
     cameraOffset:
       - xw
-      - -0.0216401454975
-      - -0.064676986768
-      - 0.00981073058949
-      - 0.7123014606690344
-      - -0.007707179755538301
-      - 0.010499323370588468
-      - 0.7017528002920512
+      # translation camera to imu
+      - 0.0036217573789395366
+      - 0.016149306498420717
+      - 0.057643433961847616
+      # rotation camera to imu in quaternion (w,x,y,z)
+      - 0.999772064256437
+      - -0.014918304219257628
+      - 0.015228883054386525
+      - -0.0011596777829895003
   measurementNoise:
     feature: 0.5334515782275915
     featureOutlierAbs: 4.281940468140158
     featureOutlierProb: 0.10406031980156036
     featureRetention: 0.2276564690508065
   velocityNoise:
-    gyr: 0.0001556083863968156
-    acc: 0.0031188805760819604
-    gyrBias: 4.324987346585896e-05
-    accBias: 0.009484699993745682
+    gyr: 0.001556083863968156
+    acc: 0.031188805760819604
+    gyrBias: 4.324987346585896e-04
+    accBias: 0.09484699993745682
   settings:
     fastRiccati: true
     useDiscreteInnovationLift: false
@@ -47,4 +49,3 @@ eqf:
     useFeaturePredictions: false
     useEquivariantOutput: true
     useInnovationLift: true 
-
